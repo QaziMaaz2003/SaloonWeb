@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Manrope", "Helvetica Neue", sans-serif;
+  --font-mono: "Space Mono", "Courier New", monospace;
+
+  --color-obsidian: #100E0B;
+  --color-obsidian-2: #1A1611;
+  --color-obsidian-3: #241E17;
+  --color-ivory: #F3EDE2;
+  --color-ivory-dim: #C9C0B0;
+  --color-bronze: #BC9257;
+  --color-bronze-bright: #E3BE84;
+  --color-bronze-deep: #7C5A32;
+  --color-line: #322B21;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-obsidian);
+  color: var(--color-ivory);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-bronze);
+  color: var(--color-obsidian);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-bronze-deep);
+  border-radius: 999px;
+}
+
+/* Signature razor-line reveal */
+@keyframes razor-sweep {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.razor-line {
+  position: relative;
+  transform-origin: left;
+  animation: razor-sweep 1.1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+}
+
+.fade-up-delay-1 { animation-delay: 0.12s; }
+.fade-up-delay-2 { animation-delay: 0.24s; }
+.fade-up-delay-3 { animation-delay: 0.36s; }
+.fade-up-delay-4 { animation-delay: 0.48s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .razor-line, .fade-up {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-bronze);
+  outline-offset: 3px;
+}
