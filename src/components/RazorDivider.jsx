@@ -4,7 +4,7 @@ export default function RazorDivider({ align = 'left', className = '' }) {
 
   return (
     <div className={`flex ${justify} ${className}`} aria-hidden="true">
-      <span className="razor-line block h-px w-16 bg-gradient-to-r from-bronze to-bronze-deep" />
+      <span className="razor-line block h-px w-16 bg-linear-to-r from-bronze to-bronze-deep" />
     </div>
   )
 }

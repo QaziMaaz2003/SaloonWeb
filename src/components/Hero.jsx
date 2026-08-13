@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="relative overflow-hidden border-b border-line">
       {/* ambient background texture */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-40 -right-40 h-[32rem] w-[32rem] rounded-full bg-bronze/10 blur-3xl" />
+        <div className="absolute -top-40 -right-40 h-128 w-lg rounded-full bg-bronze/10 blur-3xl" />
         <div className="absolute top-1/2 -left-32 h-96 w-96 rounded-full bg-bronze-deep/10 blur-3xl" />
         <svg
           className="absolute inset-0 h-full w-full opacity-[0.04]"
@@ -76,7 +76,7 @@ export default function Hero() {
           </div>
 
           <div className="fade-up fade-up-delay-2 relative">
-            <div className="relative aspect-[4/5] w-full max-w-md mx-auto">
+            <div className="relative aspect-4/5 w-full max-w-md mx-auto">
               <div className="absolute inset-0 rounded-full border border-bronze-deep/60" />
               <div className="absolute inset-6 rounded-full border border-bronze-deep/30" />
               <div className="absolute inset-0 flex items-center justify-center">

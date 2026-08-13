@@ -24,7 +24,7 @@ export default function ServiceCard({ service }) {
           {name}
         </h3>
 
-        <p className="text-sm text-ivory-dim leading-relaxed mb-8 min-h-[4.5rem]">
+        <p className="text-sm text-ivory-dim leading-relaxed mb-8 min-h-18">
           {description}
         </p>
 

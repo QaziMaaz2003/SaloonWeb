@@ -75,11 +75,11 @@ export default function Navbar() {
             onClick={() => setOpen((prev) => !prev)}
           >
             <span
-              className={`h-px bg-bronze-bright transition-all duration-300 ${open ? 'w-6 translate-y-[3px] rotate-45' : 'w-6'
+              className={`h-px bg-bronze-bright transition-all duration-300 ${open ? 'w-6 translate-y-0.75 rotate-45' : 'w-6'
                 }`}
             />
             <span
-              className={`h-px bg-bronze-bright transition-all duration-300 ${open ? 'w-6 -translate-y-[3px] -rotate-45' : 'w-4'
+              className={`h-px bg-bronze-bright transition-all duration-300 ${open ? 'w-6 -translate-y-0.75 -rotate-45' : 'w-4'
                 }`}
             />
           </button>

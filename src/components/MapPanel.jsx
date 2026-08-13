@@ -1,6 +1,6 @@
 export default function MapPanel() {
   return (
-    <div className="relative aspect-[16/10] w-full border border-line bg-obsidian-2 overflow-hidden">
+    <div className="relative aspect-16/10 w-full border border-line bg-obsidian-2 overflow-hidden">
       <svg className="absolute inset-0 h-full w-full opacity-30" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="map-grid" width="40" height="40" patternUnits="userSpaceOnUse">

@@ -27,7 +27,7 @@ export default function StorySection() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/5] w-full max-w-md mx-auto border border-line bg-obsidian-2 flex items-center justify-center">
+            <div className="aspect-4/5 w-full max-w-md mx-auto border border-line bg-obsidian-2 flex items-center justify-center">
               <svg viewBox="0 0 220 280" className="w-2/3 h-2/3" fill="none">
                 <g stroke="#BC9257" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M60 40 L160 40 L160 90 L110 240 L60 90 Z" />

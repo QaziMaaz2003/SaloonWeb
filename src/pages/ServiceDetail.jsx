@@ -52,7 +52,7 @@ function ServiceDetail() {
             <img
               src={serviceImage}
               alt={service.name}
-              className="w-full aspect-[4/5] object-cover"
+              className="w-full aspect-4/5 object-cover"
             />
           </div>
 
@@ -128,7 +128,7 @@ function ServiceDetail() {
                 <div className="bg-obsidian-2 border border-line overflow-hidden">
 
                   {/* Related Image */}
-                  <div className="aspect-[4/3] overflow-hidden">
+                  <div className="aspect-4/3 overflow-hidden">
                     <img
                       src={serviceImages[related.slug]}
                       alt={related.name}

@@ -10,7 +10,7 @@ export default function CTASection({
 }) {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-obsidian-3 via-obsidian to-obsidian" />
+      <div className="absolute inset-0 bg-linear-to-br from-obsidian-3 via-obsidian to-obsidian" />
       <div className="pointer-events-none absolute -bottom-24 right-0 h-72 w-72 rounded-full bg-bronze/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-4xl px-6 lg:px-10 py-24 text-center">
